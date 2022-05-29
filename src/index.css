@@ -22,6 +22,7 @@ body {
   min-height: 100vh;
   align-items: center;
   justify-content: center;
+  padding: 16px;
 }
 
 .calculator {
@@ -45,7 +46,7 @@ body {
 
 .display span {
   font-size: 14px;
-  font-weight: #888;
+  font-weight: rgb(52, 51, 51);
 }
 
 button {
@@ -73,4 +74,15 @@ button:hover {
   background-color: var(--primary);
   font-weight: 700;
 
+}
+
+.digits {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.digits button {
+  flex: 1 1 33.3333%;
+  max-width: 33.3333%;
+  background-color: var(--dark);
 }
